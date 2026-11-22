@@ -31,11 +31,6 @@ A TDK-ra benyújtott kutatásomban 316L rozsdamentes acélhab deformációs inho
 <i> A bemutatott vizualizásciók elkészítését Indrajeet Tambe (Malmöi Egyetem) végezte.</i>
 </p>
 
-<div class="container">
-
-
-</div>
-
 </section>
 <!-- Local RD -->
 <section id="animation">
@@ -47,7 +42,7 @@ A tomográfiás kiértékelés eredményeként kapott relatív sűrűség lokál
 
 <div class="gif-container">
 
-    <img src="local_relative_density.gif"
+    <img src="localRD/local_relative_density.gif"
          alt="Lokális relatív sűrűség változása"
          loading="lazy"
          decoding="async"
@@ -128,19 +123,18 @@ Az alábbi ábrán a DVC analízisből kapott deformációs mező úgynevezett a
 <p>
 Látható, hogy az inhomogenitások $40\%$ után válnak számottevővé. Ekkortól a minta egyik lapján lokalizálódik a deformáció.
 </p>
-<iframe
+<div
     class="model-frame"
     id="model-viewer"
-    src="devstrain_d900um.html"
-    title="Deviátoros deformáció 3D térképe"
-    loading="lazy">
-</iframe>
+    role="img"
+    aria-label="Deviátoros deformáció 3D térképe">
+</div>
 
 <p>
 A kezdeti állapotok esetleges inhomogenitásainak bemutatására adaptív színskálával mutatja a deviátoros deformáció értékét az alábbi animáció. Látható, hogy kezdetben is figyelhető meg minimális lokalizáció.
 </p>
 <div class="gif-container">
-    <img src="dev_strain_adaptive.gif"
+    <img src="devstrain/dev_strain_adaptive.gif"
          alt="Lokális deviátoros deformáció változása"
          loading="lazy"
          decoding="async">
@@ -160,6 +154,7 @@ A kezdeti állapotok esetleges inhomogenitásainak bemutatására adaptív szín
 </footer>
 
 <script type="text/javascript" src="script.js"></script>
+<script src="plotly.min.js"></script>
 <script defer
     src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 </script>
